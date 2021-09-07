@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edName"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/email_hint"
+        android:inputType="phone"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edEmail"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/phone_number_hint"
+        android:inputType="phone"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPhone"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_location_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/address_hint"
+        android:inputType="textPostalAddress"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <EditText
+        android:id="@+id/edPasswordField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edAddress"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <EditText
+        android:id="@+id/edPasswordField3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPasswordField2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/confirm_password_hint"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPasswordField3"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="15dp"
+        android:background="@color/redorange_700"
+        android:fontFamily="@font/poppins"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!--same background for the password field-->
+
+</RelativeLayout>

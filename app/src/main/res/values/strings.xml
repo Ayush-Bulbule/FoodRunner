@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FoodRunner</string>
+    <string name="forgot_pass_text"><u>Forgot Password?</u></string>
+    <string name="signup_now_text"><u>Don\'t have Account? SignUp Now</u></string>
+    <string name="name_hint">Name (min 3char)</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_number_hint">Phone Number(10 digits)</string>
+    <string name="address_hint">Address</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="password_hint">Password</string>
+    <string name="preference_file_key">FoodRunnerPrefrences</string>
+
+</resources>

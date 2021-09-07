@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redorange_500"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/food_delivery_logo" />
+
+    <EditText
+        android:id="@+id/edPhoneField1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAppIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Phone Number(10 digits)"
+        android:inputType="phone"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <EditText
+        android:id="@+id/edPasswordField1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPhoneField1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPasswordField1"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="15dp"
+        android:background="@color/redorange_700"
+        android:fontFamily="@font/poppins"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/forgot_pass_text"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/signup_now_text"
+        android:textColor="@color/white" />
+
+
+    <!--same background for the password field-->
+
+</RelativeLayout>
